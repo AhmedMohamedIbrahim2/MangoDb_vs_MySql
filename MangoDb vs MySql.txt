@@ -1,0 +1,27 @@
+# Introduction
+When you build an application, you have two primary options for databases: NoSQL or SQL, also known as unstructured and structured databases. Two main contenders for efficient, fast, and scalable databases are MySQL and MongoDB. MySQL has long been a dominant force in structured storage technology, and MongoDB is one of the most popular databases for unstructured data storage. Understanding the differences between the two will help you decide which one is right for your database needs.
+
+The main difference between the two is the way each one stores data. MySQL is a traditional structured database where data is stored in tables with primary and foreign keys that link tables. Every record must be stored in a structured, designed way and any diversions from this design will be rejected. MongoDB is a document-based database, which stores unstructured data in a JSON format with an identification number that identifies the record. Both databases have their advantages and disadvantages and are designed for specific purposes.
+
+# How Much Faster Is MongoDB vs. MySQL?
+The speed of a database depends on its application and the way it’s configured. MongoDB is usually considered faster because it will store unstructured data without any limitations, compared to the structured rules imposed with MySQL. However, if MongoDB is not configured and set up correctly, it can be a bottleneck in application performance.
+
+MongoDB bottlenecks aren’t always from administrator configurations, so performance can be improved by moving to faster cloud vendors. Another factor in speed is the way queries are designed. Poorly designed queries can restrict speed and create performance issues seen in front-end applications.
+
+# MongoDB vs. MySQL: Syntax Differences
+In a MySQL database, data is stored in tables structured as columns and rows. Every row is a record and a column stores fields for each row. MongoDB’s storage syntax uses JSON. Using JSON, MongoDB can store unstructured data in a document format. Any missing data from one record doesn’t affect storage, and developers can store random data without worrying about fitting it into a specifically designed table.
+
+The syntax for queries is also very different between the two databases. The following SELECT query is for MySQL:
+
+SELECT * FROM order ORDER BY price;
+
+The syntax for MySQL is similar to other traditional structured databases, so it’s familiar to database administrators and developers. MongoDB has a very different syntax. The same query in NoSQL MongoDB is shown below:
+
+db.order.find().sort( {price: 1} )
+
+Notice that the syntax is very different and that the “order by” clause is changed to a “sort” method in MongoDB. NoSQL can be more difficult for new developers to learn if they are familiar with traditional SQL.
+
+# MongoDB vs. MySQL: How Easy Are They to Learn?
+For developers already familiar with SQL syntax, MySQL is easier to learn. Much of the MySQL syntax is very similar to other database platforms. The big differences are in the database engines and the way MySQL is set up. Because MySQL has been around since the 1990s, there is plenty of support for the database that will help developers learn the language and platform.
+
+MongoDB syntax is very different, so it’s considered more difficult to learn. For developers responsible for analytics applications, it might be worth learning MongoDB first to familiarize yourself with the syntax immediately. Most developers start with MySQL and move to MongoDB for more advanced queries and data storage.
